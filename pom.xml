@@ -3,10 +3,21 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
-
     <groupId>com.pcdd</groupId>
     <artifactId>stunning-fiesta</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>0.1.0-SNAPSHOT</version>
+    <description>一个 Java 工具类，用于统计长篇小说中的关键字</description>
+    <url>https://github.com/freeok/stunning-fiesta</url>
+    <developers>
+        <developer>
+            <name>pcdd</name>
+            <email>akapcdd@gmail.com</email>
+        </developer>
+    </developers>
+    <scm>
+        <connection>https://github.com/freeok/stunning-fiesta.git</connection>
+        <url>https://github.com/freeok/stunning-fiesta</url>
+    </scm>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
@@ -26,5 +37,14 @@
             <version>1.18.30</version>
         </dependency>
     </dependencies>
+
+    <!-- 通过 GitHub Packages 发布到 Maven 中央仓库 -->
+    <distributionManagement>
+        <repository>
+            <id>github</id>
+            <name>GitHub OWNER Apache Maven Packages</name>
+            <url>https://maven.pkg.github.com/freeok/stunning-fiesta</url>
+        </repository>
+    </distributionManagement>
 
 </project>
