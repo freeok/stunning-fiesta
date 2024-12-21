@@ -1,8 +1,8 @@
 # stunning-fiesta
 
-一个 Java 工具类，用于统计长篇小说中的关键字
+一个 Java 工具类，根据关键字搜索文本文件的上下文
 
 ## 使用说明
 
 1. 引入依赖
-2. 调用静态方法 TxtUtils.xxx()
+2. 调用 TxtUtils 的静态方法
